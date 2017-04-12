@@ -13,6 +13,8 @@
 		E395C2191E9DED84006E5886 /* GearCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E395C2171E9DED84006E5886 /* GearCollector.xcdatamodeld */; };
 		E395C21B1E9DED84006E5886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E395C21A1E9DED84006E5886 /* Assets.xcassets */; };
 		E395C21E1E9DED84006E5886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E395C21C1E9DED84006E5886 /* LaunchScreen.storyboard */; };
+		E3FE7B9A1E9DF780008CD570 /* 9wHVhck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3FE7B991E9DF780008CD570 /* 9wHVhck.jpg */; };
+		E3FE7B9C1E9DF8B8008CD570 /* GearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE7B9B1E9DF8B8008CD570 /* GearViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E395C21A1E9DED84006E5886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E395C21D1E9DED84006E5886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E395C21F1E9DED84006E5886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3FE7B991E9DF780008CD570 /* 9wHVhck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9wHVhck.jpg; sourceTree = "<group>"; };
+		E3FE7B9B1E9DF8B8008CD570 /* GearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				E395C2101E9DED84006E5886 /* AppDelegate.swift */,
 				E395C2121E9DED84006E5886 /* ViewController.swift */,
+				E3FE7B9B1E9DF8B8008CD570 /* GearViewController.swift */,
 				E395C2141E9DED84006E5886 /* Main.storyboard */,
 				E395C21A1E9DED84006E5886 /* Assets.xcassets */,
 				E395C21C1E9DED84006E5886 /* LaunchScreen.storyboard */,
 				E395C21F1E9DED84006E5886 /* Info.plist */,
 				E395C2171E9DED84006E5886 /* GearCollector.xcdatamodeld */,
+				E3FE7B991E9DF780008CD570 /* 9wHVhck.jpg */,
 			);
 			path = GearCollector;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 			files = (
 				E395C21E1E9DED84006E5886 /* LaunchScreen.storyboard in Resources */,
 				E395C21B1E9DED84006E5886 /* Assets.xcassets in Resources */,
+				E3FE7B9A1E9DF780008CD570 /* 9wHVhck.jpg in Resources */,
 				E395C2161E9DED84006E5886 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E395C2131E9DED84006E5886 /* ViewController.swift in Sources */,
+				E3FE7B9C1E9DF8B8008CD570 /* GearViewController.swift in Sources */,
 				E395C2111E9DED84006E5886 /* AppDelegate.swift in Sources */,
 				E395C2191E9DED84006E5886 /* GearCollector.xcdatamodeld in Sources */,
 			);
@@ -305,6 +313,7 @@
 				E395C2241E9DED84006E5886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -54,5 +54,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let gear = gears[indexPath.row]
+        performSegue(withIdentifier: "gearSegue", sender: gear)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! GearViewController
+        nextVC.gear = sender as? Gear
+    }
+    
 }
 

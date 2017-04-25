@@ -40,7 +40,7 @@
                         <barButtonItem key="backBarButtonItem" title="bark" id="ZXb-GM-nVQ"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="7jf-Da-Xes">
                             <connections>
-                                <segue destination="esh-vX-F5D" kind="show" id="mXP-7k-ZMK"/>
+                                <segue destination="esh-vX-F5D" kind="show" identifier="gearSegue" id="mXP-7k-ZMK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -84,14 +84,23 @@
                                     <action selector="addTapped:" destination="esh-vX-F5D" eventType="touchUpInside" id="fvZ-Q5-utY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-49-4kz">
+                                <rect key="frame" x="165" y="356" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="esh-vX-F5D" eventType="touchUpInside" id="wCn-D7-B0R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mPI-49-4kz" firstAttribute="top" secondItem="lFZ-aZ-Xvw" secondAttribute="bottom" constant="8" id="080-0l-hfC"/>
                             <constraint firstItem="b0W-ef-KJ2" firstAttribute="centerX" secondItem="bDp-nG-qUE" secondAttribute="centerX" id="48P-T9-VMW"/>
                             <constraint firstItem="b0W-ef-KJ2" firstAttribute="width" secondItem="i6F-07-lv0" secondAttribute="width" id="6on-cf-oG7"/>
                             <constraint firstItem="lFZ-aZ-Xvw" firstAttribute="top" secondItem="b0W-ef-KJ2" secondAttribute="bottom" constant="20" id="8oG-tV-czD"/>
                             <constraint firstItem="b0W-ef-KJ2" firstAttribute="top" secondItem="i6F-07-lv0" secondAttribute="bottom" constant="27" id="H34-09-NvY"/>
                             <constraint firstItem="i6F-07-lv0" firstAttribute="top" secondItem="8cR-CY-Mgt" secondAttribute="bottom" constant="27" id="KsZ-WK-bvD"/>
+                            <constraint firstItem="mPI-49-4kz" firstAttribute="centerX" secondItem="bDp-nG-qUE" secondAttribute="centerX" id="QMK-ms-huc"/>
                             <constraint firstItem="lFZ-aZ-Xvw" firstAttribute="centerX" secondItem="bDp-nG-qUE" secondAttribute="centerX" id="StW-a2-uSg"/>
                             <constraint firstItem="i6F-07-lv0" firstAttribute="centerX" secondItem="bDp-nG-qUE" secondAttribute="centerX" id="WdZ-qw-wGM"/>
                         </constraints>
@@ -111,7 +120,9 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="deleteButton" destination="mPI-49-4kz" id="2z0-I4-hjs"/>
                         <outlet property="descriptorTextField" destination="b0W-ef-KJ2" id="r1f-Tx-xX4"/>
+                        <outlet property="flexiButton" destination="lFZ-aZ-Xvw" id="MUa-J7-9e4"/>
                         <outlet property="gearImageView" destination="i6F-07-lv0" id="R1g-5i-Kj4"/>
                     </connections>
                 </viewController>
